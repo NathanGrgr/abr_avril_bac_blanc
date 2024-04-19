@@ -18,7 +18,7 @@ class ABR:
                   self.gauche=ABR(valeur)
               else:
                   self.gauche.insertion(valeur)
-                  
+
 
 
       def recherche(self,valeur):
@@ -33,8 +33,12 @@ class ABR:
               compt+=1
               self.gauche.recherche(valeur)
               return compt
-          
 
+      def hauteur(self):
+          pass
+
+      def affichage_console(self,arbre):
+          pass
 
 if __name__=="__main__":
    ag=ABR(3)
@@ -43,4 +47,3 @@ if __name__=="__main__":
    arbre.insertion(10)
    arbre.insertion(4)
    print(arbre.recherche(10))
-          
